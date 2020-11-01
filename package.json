@@ -4,7 +4,10 @@
   "description": "Boilerplate react/typescript project following Manguinho react solid tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --passWothNoTests",
+    "test:watch": "npm test -- --watch",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage"
   },
   "keywords": [],
   "author": "joaodorea",
